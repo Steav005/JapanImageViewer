@@ -1,0 +1,19 @@
+#main{
+    background-color: #2B2B2B;
+}
+h1{
+    color: white;
+}
+
+body{
+    background-color: #2B2B2B;
+}
+
+img{
+    border: white solid 3px;
+    margin: 6px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #4f5b69;
+}
