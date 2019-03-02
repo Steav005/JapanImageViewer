@@ -9,57 +9,58 @@
     <link rel="stylesheet" href="css/fullpage.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sidemenu.css" />
 
     <title>127.0.0.1</title>
 </head>
 <body>
-<div class="page-container">
-    <!-- top navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project Name</a>
-            </div>
+<div class="nav-side-menu">
+    <div class="brand">Travel Images</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="products">
+                <li class="active"><a href="#">CSS3 Animation</a></li>
+                <li><a href="#">General</a></li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Tabs &amp; Accordions</a></li>
+                <li><a href="#">Typography</a></li>
+                <li><a href="#">FontAwesome</a></li>
+                <li><a href="#">Slider</a></li>
+                <li><a href="#">Panels</a></li>
+                <li><a href="#">Widgets</a></li>
+                <li><a href="#">Bootstrap Model</a></li>
+            </ul>
+
+            <li data-toggle="collapse" data-target="#new" class="collapsed">
+                <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="new">
+                <li>New New 1</li>
+                <li>New New 2</li>
+                <li>New New 3</li>
+            </ul>
+        </ul>
+    </div>
+</div>
+<div class="container" id="main">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="fullpage" />
         </div>
     </div>
-
-    <div class="container">
-        <div class="row row-offcanvas row-offcanvas-left">
-
-            <!-- sidebar -->
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-                <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </div>
-
-            <!-- main area -->
-            <div class="col-xs-12 col-sm-9">
-                <div id="fullpage">
-                    <div class="section">
-                        <a data-fancybox="gallery" href="images/1.jpg"><img src="images/1.jpg"></a>
-                    </div>
-                    <div class="section">
-                        <a data-fancybox="gallery" href="images/2.jpg"><img src="images/2.jpg"></a>
-                    </div>
-                </div>
-            </div><!-- /.col-xs-12 main -->
-        </div><!--/.row-->
-    </div><!--/.container-->
-</div><!--/.page-container-->
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/fullpage.js"></script>
+<script src="js/js.cookie.min.js"></script>
+<script src="js/exif-js.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

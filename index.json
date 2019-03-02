@@ -1,0 +1,22 @@
+[
+    {
+        "file": "IMG_0355.JPG",
+        "date": {
+            "minute": 5,
+            "hour": 15,
+            "day": 16,
+            "month": 11,
+            "year": 2015
+        }
+    },
+    {
+        "file": "IMG_0357.JPG",
+        "date": {
+            "minute": 10,
+            "hour": 15,
+            "day": 16,
+            "month": 11,
+            "year": 2015
+        }
+    }
+]
